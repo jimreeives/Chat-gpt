@@ -23,7 +23,7 @@ sudo usermod -aG docker jenkins
 newgrp docker
 sudo chmod 777 /var/run/docker.sock
 sudo systemctl restart jenkins
-docker run -d --name sonar -p 9000:9000 sonarqube:community
+docker run -d --name sonar -p 9010:9010 sonarqube:community
 
 # install trivy
 sudo apt-get install wget apt-transport-https gnupg lsb-release -y
